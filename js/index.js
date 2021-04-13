@@ -204,7 +204,7 @@ function doTimeTableLoad(classId) {
     //hide elements just in case
     $("#timeTable").hide();
     //removing rows
-    $("#titelRow").siblings().remove();
+    $("#timeTableBody").children().remove();
     //check if a class was selected (id 0 means none is selected)
     if (classId != 0) {
         //hiding alert
