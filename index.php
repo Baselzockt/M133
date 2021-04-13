@@ -1,1 +1,1 @@
-<?php include_once("index.html"); ?>
+<?php include_once("index.html"); //this php file has the only purpouse to enable the project to run on heroku ?>
