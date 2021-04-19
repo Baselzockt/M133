@@ -54,7 +54,7 @@ function setup() {
 //Loads All Jobs and selects a job if a job id is saved in local storage
 function loadAllJobs() {
     //load all jobs
-    $.getJSON("https//sandbox.gibm.ch/berufe.php").done(data => {
+    $.getJSON("https://sandbox.gibm.ch/berufe.php").done(data => {
         //check if there is data
         if (data.length > 0) {
             //hide alert. The request was successfull
@@ -142,7 +142,7 @@ function loadClasses(jobId) {
 }
 
 function getClasses(jobId) {
-    $.getJSON("https//sandbox.gibm.ch/klassen.php?beruf_id=" + jobId,
+    $.getJSON("https://sandbox.gibm.ch/klassen.php?beruf_id=" + jobId,
         data => {
             if (data.length > 0) {
                 //data was found populating class selector
@@ -219,7 +219,7 @@ function doTimeTableLoad(classId) {
 
 function getTimeTable(classId) {
     //loading time table from api
-    $.getJSON("https//sandbox.gibm.ch/tafel.php?klasse_id=" + classId + "&woche=" + date.getWeek() + "-" + date.getFullYear(),
+    $.getJSON("https://sandbox.gibm.ch/tafel.php?klasse_id=" + classId + "&woche=" + date.getWeek() + "-" + date.getFullYear(),
         function(data) {
             //checking if we got data
             if (data.length > 0) {
