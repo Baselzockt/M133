@@ -87,7 +87,7 @@ function checkLocalStorageForJobID() {
 
 function prepareClasses() {
     $("#classes").fadeIn();
-    //tryes to load classes for the selected job. shows a message when none is selected
+    //tries to load classes for the selected job. shows a message when none is selected
     loadClasses($("#jobs").find(":selected").val());
 }
 
